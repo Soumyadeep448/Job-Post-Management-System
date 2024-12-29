@@ -16,7 +16,8 @@ function toggleForms() {
 function validateLogin() {
     const email = document.getElementById("login-email").value;
     const password = document.getElementById("login-password").value;
-    const role=document.getElementById("user-type-register").value;
+    const loginrole=document.getElementById("user-type-login").value;
+    console.log(loginrole);
 
     let isValid = true;
 
@@ -35,14 +36,16 @@ function validateLogin() {
     }
 
     if (isValid) {
-        alert("Login Successful");
-        if (role == "career-seeker") {
-            window.location.href = "./career.html"; 
-        } else if (role == "employee") {
-            window.location.href = "./dashboard.html"; 
+        
+        if (loginrole == "career") {
+            alert("Login Successful");
+            window.location.href = "career.html"; 
+        } else if (loginrole == "employee") {
+            alert("Login Successful");
+            window.location.href = "dashboard.html"; 
         }
         
-        window.location.href = "./dashboard.html"; 
+        
     }
 }
 
@@ -52,6 +55,7 @@ function validateRegister() {
     const email = document.getElementById("register-email").value;
     const password = document.getElementById("register-password").value;
     const confirmPassword = document.getElementById("register-confirm-password").value;
+    const registerrole=document.getElementById("user-type-register").value;
 
     let isValid = true;
 
@@ -84,11 +88,12 @@ function validateRegister() {
     }
 
     if (isValid) {
-        alert("Login Successful");
-        if (role == "career-seeker") {
-            window.location.href = "./career.html"; 
-        } else if (role == "employee") {
-            window.location.href = "./dashboard.html"; 
+        if (registerrole == "career") {
+            alert("Login Successful");
+            window.location.href = "career.html"; 
+        } else if (registerrole == "employee") {
+            alert("Login Successful");
+            window.location.href = "dashboard.html"; 
         }
     }
         
