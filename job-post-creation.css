@@ -1,0 +1,105 @@
+/* job-post-creation styles */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f9f9f9; */
+    background-image: url("./Resorces/Design.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Header */
+header h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+form input,
+form textarea,
+form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+form #salary-min,
+form #salary-max {
+    width: 48%;
+    display: inline-block;
+}
+
+form #salary-max {
+    float: right;
+}
+
+/* Button */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    form #salary-min,
+    form #salary-max {
+        width: 100%;
+        float: none;
+    }
+}

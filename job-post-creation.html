@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Post Creation</title>
+    <link rel="stylesheet" href="./job-post-creation.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Create a New Job Post</h1>
+            <p>Fill in the details below to create a new job post for your company.</p>
+        </header>
+        <main>
+            <form id="job-post-form">
+                <label for="job-title">Job Title:</label>
+                <input type="text" id="job-title" placeholder="Enter job title" required>
+
+                <label for="job-description">Job Description:</label>
+                <textarea id="job-description" rows="5" placeholder="Write a brief description" required></textarea>
+
+                <label for="job-department">Department:</label>
+                <select id="job-department" required>
+                    <option value="" disabled selected>Select a department</option>
+                    <option value="it">IT</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="hr">HR</option>
+                    <option value="finance">Finance</option>
+                </select>
+
+                <label for="salary-range">Salary Range ($):</label>
+                <input type="number" id="salary-min" placeholder="Min salary" required>
+                <input type="number" id="salary-max" placeholder="Max salary" required>
+
+                <label for="application-deadline">Application Deadline:</label>
+                <input type="date" id="application-deadline" required>
+
+                <button type="button" id="submit-btn">Create Job Post</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="./job-post-creation.js"></script>
+</body>
+</html>
