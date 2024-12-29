@@ -140,3 +140,56 @@ body {
 .job-application form button:hover {
     background-color: #0056b3;
 }
+
+
+
+
+
+.job-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-title {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.apply-now {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-now a {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.apply-now a:hover {
+    background-color: #0056b3;
+}
