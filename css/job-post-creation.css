@@ -4,7 +4,7 @@
 body {
     font-family: Arial, sans-serif;
     /* background-color: #f9f9f9; */
-    background-image: url("./Resorces/Design.png");
+    background-image: url("/Resorces/Design.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
