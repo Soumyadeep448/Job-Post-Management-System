@@ -1,51 +1,66 @@
+body {
+    background-image: url('./Resorces/Design.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #f8f9fa; */
+    margin: 0;
+}
 
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f8f9fa;
-            margin: 0;
-        }
-        .sidebar {
-            width: 250px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100%;
-            background: #007fff;
-            color: #fff;
-            padding-top: 20px;
-        }
-        .sidebar a {
-            display: block;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-        }
-        .sidebar a:hover {
-            background: #495057;
-        }
-        .main-content {
-            margin-left: 250px;
-            padding: 20px;
-        }
-        .card {
-            margin-bottom: 20px;
-        }
-        .table thead th {
-            background-color: #343a40;
-            color: #fff;
-        }
-        .btn-primary {
-            background-color: #007bff;
-            border: none;
-        }
-    
+.sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #007fff;
+    color: #fff;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #495057;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
 
 
 
-        /* Career Section Styling */
+
+/* Career Section Styling */
 .career-header {
     text-align: center;
-    background-color: #007bff;
+    /* background-color: #007bff; */
+    background-image: url("./Resorces/happy-co-workers-close-window.png");
+    /* background-image: url('./Resorces/loginback.png');  */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     padding: 25px;
 }
@@ -57,7 +72,7 @@
     background-color: #f9f9f9;
 }
 
-.job-listings{
+.job-listings {
     background: white;
     padding: 20px;
     border-radius: 8px;
@@ -73,7 +88,8 @@
     width: 65%;
 }
 
-.job-listings h2, .job-application h2 {
+.job-listings h2,
+.job-application h2 {
     margin-bottom: 20px;
     color: #333;
 }
@@ -88,10 +104,10 @@
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 4px;
-    
+
 }
 
-.job-listings ul li:hover{
+.job-listings ul li:hover {
     cursor: pointer;
     background: #aaa9a9;
 }
@@ -102,7 +118,8 @@
     color: #555;
 }
 
-.job-application form input, .job-application form select {
+.job-application form input,
+.job-application form select {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
