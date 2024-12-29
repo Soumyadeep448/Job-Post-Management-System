@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <link rel="stylesheet" href="./dashcar.css">
+</head>
+<body>
+    <header class="career-header">
+        <h1>Join Our Team</h1>
+        <p>Explore our current job openings and start your career with us.</p>
+    </header>
+
+    <main class="career-main">
+        <!-- Job Listings -->
+        <section class="job-listings">
+            <h2>Available Positions</h2>
+            <ul id="job-list">
+                <!-- Jobs will be dynamically added here -->
+            </ul>
+        </section>
+
+        <!-- Application Form -->
+        <section class="job-application">
+            <h2>Apply for a Job</h2>
+            <form id="application-form">
+                <label for="applicant-name">Name:</label>
+                <input type="text" id="applicant-name" required>
+
+                <label for="applicant-email">Email:</label>
+                <input type="email" id="applicant-email" required>
+
+                <label for="job-select">Select Job:</label>
+                <select id="job-select" required>
+                    <!-- Job options will be dynamically added here -->
+                </select>
+
+                <label for="applicant-resume">Resume (PDF):</label>
+                <input type="file" id="applicant-resume" accept=".pdf" required>
+
+                <button type="button" onclick="submitApplication()">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="career.js"></script>
+</body>
+</html>
